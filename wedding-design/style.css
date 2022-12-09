@@ -3,7 +3,7 @@ body{
     font-size: 16px;
     margin: 0px;
 }
-*{ /*bütün etiketlere etki eder*/ 
+*{
     box-sizing: border-box;
 }
 h1,h2,h3{
@@ -13,7 +13,7 @@ h1,h2,h3{
 }
 header{
     width: 100% ;
-    position: relative; /*positionda width bozulur tekrar ver*/
+    position: relative; 
     background-image: url(header.jpg);
     background-size: cover;
     height: 100vh;
@@ -48,8 +48,8 @@ nav{
     position:fixed;
     bottom: 0;
     left: 0;
-    width: 100%; /*position verdiğinde width bozulduğundan tekrar tanımla*/
-    z-index: 999;/*z index ne kadar yüksekse o kadar önceliklidir - layer mantığı ile düşünülebilir*/
+    width: 100%; 
+    z-index: 999;
 }
 
 nav:hover{
