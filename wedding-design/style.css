@@ -1,0 +1,309 @@
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+*{ /*bütün etiketlere etki eder*/ 
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+header{
+    width: 100% ;
+    position: relative; /*positionda width bozulur tekrar ver*/
+    background-image: url(header.jpg);
+    background-size: cover;
+    height: 100vh;
+    filter: grayscale(50%);
+
+}
+#hicerik{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
+#hicerik h1{
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+#hicerik h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#hicerik h3{
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+nav{
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /*position verdiğinde width bozulduğundan tekrar tanımla*/
+    z-index: 999;/*z index ne kadar yüksekse o kadar önceliklidir - layer mantığı ile düşünülebilir*/
+}
+
+nav:hover{
+    background: rgba(255, 255, 255, 1);
+}
+
+nav ul{
+    list-style-type:none; 
+    margin: 0;
+    padding: 0;
+}
+
+/*nav ul li{
+
+
+}*/
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 10px 0px;
+}
+.tasiyici{
+    width: 50%;
+    margin: auto;
+}
+.temizle{
+    clear: both;
+}
+nav ul li a:hover{
+    background: #ccc;
+}
+
+#aciklama{
+    background: #ffdddd;
+    padding: 100px 0px;
+    filter: grayscale(60%);
+    text-align: center;
+}
+
+#aciklama h1{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+#aciklama img{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+
+#aciklama p {
+    line-height: 200%;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: left
+}
+
+#aciklama a{
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+#aciklama a:hover{
+    background: #ccc;
+    color: #000;
+
+
+}
+
+#slogan{
+    width: 100% ;
+    position: relative; /*positionda width bozulur tekrar ver*/
+    background-image: url(flowers.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+#sicerik h1{
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+#sicerik h2{
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+#sicerik{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
+
+#dugun{
+    background: #ffdddd;
+    padding: 80px 0px;
+    filter: grayscale(60%);
+    text-align: center;
+}
+
+#dugun h1{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 70px;
+}
+
+#dugun img{
+    width: 100%;
+    margin-bottom: 80px;
+    border-radius: 3px;
+}
+#sol, #sag{
+    width: 50%;
+    float: left;
+}
+#dugun h2{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+#dugun h3{
+    font-size: 0.9rem;
+    line-height: 250%;
+}
+#iletisim{
+    background-color: #ffdddd;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    text-align: center;
+}
+#iletisim h1{
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+#iletisim h2{
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+#iletisim a{
+    display: inline-block;
+    background-color: #f88179;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 3px;
+    opacity: 0.5;
+
+}
+#iletisim a:hover{
+    background-color: #ccc;
+    color: #000;
+    opacity: 1;
+}
+
+footer{
+    background-color: #000;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+}
+footer a:hover{
+    color: #18c726;
+}
+/*@media (max-width:1200px){
+
+}*/
+@media (max-width:992px){
+    .tasiyici{
+        width: 60%;
+    }
+}
+@media (max-width:768px){
+    .tasiyici{
+        width: 70%;
+    }
+}
+@media (max-width:576px){
+    .tasiyici{
+        width: 80%;
+    }
+}
+@media (max-width:480px){
+    #hicerik h1{
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+    #hicerik h2{
+        font-size: 1.4rem;
+    }
+    #hicerik h3{
+        font-size: 1.5rem; ;
+    }
+    #aciklama h1{
+        font-size: 1.2rem;
+    }
+    .tasiyici{
+        width: 90%;
+    }
+    #sicerik h1{
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+    #sicerik h2{
+        font-size: 1.4rem;
+    }
+    #dugun h1{
+        font-size: 1.8rem;
+    }
+    #sol, #sag{
+        float: none;
+        width: 100%;
+    }
+    #sol{
+        margin-bottom: 30px;
+    }
+    #iletisim h1{
+        font-size: 1.8rem;
+    }
+    #iletisim h2{
+        font-size: 1rem;
+    }
+    #iletisim a{
+        font-size: 1.2rem;
+        padding: 10px 30px;
+    }
+    footer{
+        padding-top: 10px;
+    }
+
+}
